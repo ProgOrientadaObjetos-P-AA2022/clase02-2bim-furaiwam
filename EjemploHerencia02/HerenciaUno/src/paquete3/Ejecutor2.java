@@ -23,7 +23,7 @@ public class Ejecutor2 {
                 apellido, identificacion, edad);
         
         estDistancia.establecerCostoAsignatura(50.5);
-        estDistancia.establecerNumeroAsginaturas(5);
+        //estDistancia.establecerNumeroAsginaturas(5);
         estDistancia.calcularMatriculaDistancia();
         
         String cadenaFinal = String.format("%s", estDistancia);

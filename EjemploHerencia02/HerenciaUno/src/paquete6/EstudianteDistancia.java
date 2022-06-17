@@ -6,24 +6,24 @@ public class EstudianteDistancia extends Estudiante{
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
-    
+
     public EstudianteDistancia(String n, String ap, String iden, int e,
-            int numAsg, double costoAsg){
+                               int numAsg, double costoAsg){
         super(n, ap, iden, e);
         numeroAsignaturas = numAsg;
         costoAsignatura = costoAsg;
     }
-    
+
     public EstudianteDistancia(String n, String ap, String iden, int e){
         super(n, ap, iden, e);
-      
+
     }
-    
+
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
     public void establecerNumeroAsginaturas(int numero){
         numeroAsignaturas = numero;
     }
-    
+
     // 3.  Método establecerCostoAsignatura(valor: Real)
     public void establecerCostoAsignatura(double valor){
         costoAsignatura = valor;
@@ -37,7 +37,7 @@ public class EstudianteDistancia extends Estudiante{
     //  Métodos obtener para los datos o atributos de la clase
     // 5. Método obtenerNumeroAsignaturas() : Entero
     public int obtenerNumeroAsignaturas(){
-        return numeroAsignaturas; 
+        return numeroAsignaturas;
     }
 
     // 6. Método obtenerCostoAsignatura() : Real
@@ -49,17 +49,17 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
-    
+
     @Override
     public String toString(){
-        
+
         String cadenaFinal = String.format("Nombre: %s\n"
-                + "Apellido: %s\n"
-                + "Identificación: %s\n"
-                + "Edad: %s\n"
-                + "Costo Asignatura: %.2f\n"
-                + "Número de Asignaturas: %d\n"
-                + "Total Matricula: %.2f\n",
+                        + "Apellido: %s\n"
+                        + "Identificación: %s\n"
+                        + "Edad: %s\n"
+                        + "Costo Asignatura: %.2f\n"
+                        + "Número de Asignaturas: %d\n"
+                        + "Total Matricula: %.2f\n",
                 nombresEstudiante,
                 obtenerApellidoEstudiante(), // apellidosEstudiante,
                 identificacionEstudiante,
@@ -67,7 +67,7 @@ public class EstudianteDistancia extends Estudiante{
                 obtenerCostoAsignatura(),
                 obtenerNumeroAsignaturas(),
                 obtenerMatriculaDistancia());
-        
+
         return cadenaFinal;
     }
 
