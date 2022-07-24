@@ -12,7 +12,7 @@ public class Ejecutor2 {
         double costoCreditos = 30.00;
 
         EstudiantePresencial estPresencial = new EstudiantePresencial(nombre,
-                apellido, identidad, edad, numCreditos, costoCreditos);
+                apellido, identidad, edad);
         estPresencial.calcularMatriculaPresencial();
 
         System.out.println(estPresencial);

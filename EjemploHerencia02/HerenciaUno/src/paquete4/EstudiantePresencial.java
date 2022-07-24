@@ -7,7 +7,7 @@ public class EstudiantePresencial extends Estudiante{
     double costoCredito;
     double matriculaPresencial;
 
-    public EstudiantePresencial(String n, String a, String iden, int ed, int numCreditos, double costoCreditos) {
+    public EstudiantePresencial(String n, String a, String iden, int ed) {
         super(n, a, iden, ed);
     }
 
@@ -53,7 +53,6 @@ public class EstudiantePresencial extends Estudiante{
                 obtenerNumeroCreditos(),
                 obtenerCostoCredito(),
                 obtenerMatriculaPresencial());
-
         return cadenaFinal;
     }
 }
